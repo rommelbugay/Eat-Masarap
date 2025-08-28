@@ -2,13 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
 
-.platzhalter {
-  height: 300vh;
-}
-
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,8 +17,54 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 5rem;
+  font-size: 0.7rem;
+  text-align: center;
+  align-items: center;
+}
+
+.bnav {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: color 0.5 ease-in-out;
+}
+
+.navitem {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: color 0.5 ease-in-out;
+}
+
+.rnav {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: color 0.5 ease-in-out;
+}
+
+.bnav:hover {
+  background-color: #0032a0;
+}
+
+.navitem:hover {
+  color: #fed141;
+}
+
+.rnav:hover {
+  background-color: #bf0d3e;
+}
+
 .pinoy {
-  height: 100vh;
+  height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,10 +116,275 @@ body {
 
 .pinoy-action:hover {
   background-color: transparent;
+  color: #ddd;
+}
+
+.about {
+  display: grid;
+  gap: 2rem;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.aboutcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  margin: 2rem 0 1rem 0;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-bottom: 5px solid #0032a0;
+}
+
+.textcontent {
+  font-size: 0.9rem;
+}
+
+.buttonaction {
+  width: fit-content;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0032a0;
+  padding: 0.5rem 1rem;
+  border: 1px solid #bf0d3e;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonaction:hover {
+  background-color: transparent;
   color: #fed141;
 }
 
+.aboutimages {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.largeimg {
+  min-width: 50%;
+}
+
+.aboutimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.smallimages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.buffet {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sisig {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infowrap {
+  margin: 3rem;
+  padding: 2rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/dutytime.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info .heading .heading2 .heading3 {
+  margin: 0 auto;
+}
+
+.heading2 {
+  margin: 2rem 0 1rem 0;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-bottom: 5px solid #bf0d3e;
+}
+
+.zeit {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  margin-bottom: 0.25rem;
+}
+
+.reserv {
+  width: fit-content;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0032a0;
+  padding: 0.1rem 0.1rem;
+  border: 1px solid #bf0d3e;
+  transition: all 0.3s ease-in-out;
+}
+
+.day {
+  color: #ddd;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontaktinhalt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.kontakt .heading3 {
+  margin-top: 0;
+}
+
+.contactdetail {
+  margin-top: 0.5rem;
+  color: #ddd;
+}
+
+.contactimg {
+  width: 100%;
+}
+
+.heading3 {
+  margin: 2rem 0 1rem 0;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-bottom: 5px solid #fed141;
+}
+
+.contactactions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.button {
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 1px solid #fff;
+  color: #fed141;
+  background-color: #0032a0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.buttoninverted {
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttoninverted:hover {
+  background-color: #bf0d3e;
+  color: #fed141;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #303030;
+}
+
+.footerlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footeritems {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.2 ease-in-out;
+}
+
+.footeritems:hover {
+  color: #fed141;
+}
+
+.footercopyright {
+  margin-top: 1rem;
+}
+
 @media only screen and (min-width: 600px) {
+  .kontaktinhalt {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contactimg {
+    width: 50%;
+  }
+
+  .infowrap {
+    margin: 4rem 0;
+  }
+
+  .textcontent {
+    font-size: 1rem;
+  }
+
+  .nav {
+    gap: 2rem;
+    font-size: 1rem;
+  }
+
   .title {
     font-size: 5rem;
     line-height: 3rem;
@@ -89,8 +400,50 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
+  .kontakt .heading3 {
+    margin-bottom: 2rem;
+  }
+
+  .heading3 {
+    font-size: 2rem;
+  }
+
+  .contactdetail {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .contactactions {
+    flex-direction: row;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+    align-items: center;
+  }
+
+  .aboutimages,
+  .smallimages {
+    gap: 1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .nav {
+    gap: 4rem;
+  }
+
   .title {
     font-size: 7rem;
     line-height: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
   }
 }
