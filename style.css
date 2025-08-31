@@ -233,7 +233,10 @@ body {
   margin-top: 1rem;
 }
 
-.entry {
+.entry,
+.speisen,
+.dessert,
+.drinks {
   display: flex;
   justify-content: space-between;
   width: 15rem;
@@ -359,6 +362,79 @@ body {
 
 .footercopyright {
   margin-top: 1rem;
+}
+
+.speisekarte {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 80, 255, 0.5),
+      rgba(255, 80, 0, 0.9)
+    ),
+    url(./images/front.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.speisekarteaction {
+  margin-top: 4rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #bf0d3e;
+  padding: 1rem 2rem;
+  border: 1px solid #0032a0;
+  transition: all 0.3s ease-in-out;
+}
+
+.essenkarte {
+  margin: 3rem;
+  padding: 2rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/haupt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nachtischkarte {
+  margin: 3rem;
+  padding: 2rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/dessert.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.getränkekarte {
+  margin: 3rem;
+  padding: 2rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/getränke.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 600px) {
